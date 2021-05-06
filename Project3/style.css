@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Mono&family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+#page-wrapper{
+    position: relative;
+    font-family: 'Poppins',sans-serif;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    min-height: 75px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    width:100%;
+    z-index: 1;
+}
+
+header ul{
+    display:flex;
+    margin: auto 5px;
+}
+header ul li{
+    list-style: none;
+    margin: 13px 15px 14px 15px;
+    background-color: #005587;
+    padding: 10px;
+    border-radius: 7px;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+#email-section{
+    position:relative;
+    box-sizing: border-box;
+    max-width:350px;
+    margin: 100px auto 100px auto;
+    z-index:0;
+}
+label{
+    text-align: center;
+}
+#email{
+    width:95%;
+    height: 25px;
+    border: 1px solid #00205b;
+    border-radius: 7px;
+}
+#email:focus{
+    outline: none;
+    border-radius: 7px;
+    border: 2px solid #0085ad;
+}
+
+#submit{
+    margin-top: 10px;
+    margin-left: 125px;
+    padding: 8px 30px;
+    background-color: #0085ad;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+#submit:hover{
+    background-color: #00205b;
+    transform: scale(1.025);
+}
+
+.feature{
+    display: flex;
+    margin: 4px auto 20px auto;
+    box-sizing: border-box;
+    
+    max-width: 80%;
+    
+}
+
+#petrol-pump,
+#seat,
+#volume{
+    align-items: flex-start;
+   margin: 10px 40px 10px 20px;
+    
+}
+#volume{
+    margin-right: 50px;
+}
+
+.feature caption{
+    display: flex;
+    flex-direction: column;
+}
+
+#launch h2,
+#features h2,
+#merch{
+    text-align: center;
+    margin-top: 75px;
+    margin-bottom: 25px;
+    color: #005587;
+    text-transform: uppercase;
+
+}
+
+#video{
+    display: block;
+    margin: 0 auto 20px auto;
+    border:5px solid black;
+    border-radius: 20px;
+    box-shadow: (10px 10px 8px #111);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.7));
+}
+
+#merchandise{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 3);
+    height: auto;
+    margin: 25px;
+    border: 1px solid #00205b;
+    border-radius: 7px;
+    background-color: #00205b;
+    color: #fff;
+    box-shadow: (10px 10px 8px #0085ad);
+    filter: drop-shadow(0px 4px 4px #0085ad);
+}
+
+.product img{
+    border-radius: 20px;
+    margin: 10px 0 5px 0 ;
+}
+
+
+
+.product button{
+    margin: 30px 0 20px 0;
+    padding: 20px 30px;
+    color:#fff;
+    background-color: #005587;
+    border-radius: 7px;
+    box-shadow: none;
+    box-shadow: 0px 0px 0px transparent;
+    border: 0px solid transparent;
+    text-shadow: 0px 0px 0px transparent;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.product button:hover{
+    
+    transform: scale(1.025);
+}
+
+
+footer{
+    background-color: #00205b;
+    text-align: right;
+    padding: 25px;
+}
+
+footer a{
+    margin: 10px;
+}
+
+#line2{
+    display: flex;
+    justify-content: flex-end;
+    color: #fff;
+}
+
+#line2 p{
+    margin: 10px;
+}
+
+::placeholder{
+    color:#6399ac;
+}
+
+@media (max-width: 600px) {
+    header {
+      flex-wrap: wrap;
+    }
+
+    #email-section{
+        margin-top:150px;
+    }
+
+    #video{
+        width: 80%;
+    }
+
+    #merchandise{
+        flex-wrap: wrap;
+    }
+}  

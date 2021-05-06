@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+
+*{
+    box-sizing: border-box;
+    width: 100%;
+    height:auto;
+    
+    font-family: poppins;
+}
+
+#title
+{
+    text-align: center;
+}
+
+#description{
+    text-align: center;
+    font-size: small;
+    margin-bottom: 2rem;
+}
+
+#survey-form{
+    display: block;
+    width: 70%;
+    margin: auto;
+    border: 1px solid #c2c2c2;
+    padding: 2rem;
+    border-radius: 7px;
+    background-color: #f8dacc;
+    
+}
+
+.form_group{
+    background-color: #f8dacc;
+    
+}
+
+#name,
+#email, 
+#number,
+#dropdown,
+textarea{
+    margin-bottom: 12.5px;
+    border-radius: 4px;
+    background-color: transparent;
+    border:1px solid #bad9d6;
+    background-color: #faf8ed;
+}
+
+label{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.input-radio{
+    width: 5%;
+}
+
+.prefer{
+    width: 5%;
+}
+ 
+input[type="submit"]{
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #40804f;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    background-color: green;
+    transform: scale(1.01);
+    transition: ease-in-out;
+}
+
+
+
