@@ -135,7 +135,7 @@ a{
     background-color: #9ccbd1;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     border-radius: 7px;
-    transition: 0.3s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
 
 .project:hover{
@@ -158,6 +158,26 @@ a{
     
 }
 
+.project-title::before{
+    content: '<';
+    color:#9ccbd1;
+    transition: 0.5s ease-in-out;
+    font-weight: 900;
+}
+
+.project-title::after{
+    content: '/>';
+    color: #9ccbd1;
+    transition: 0.5s ease-in-out;
+    font-weight: 900;
+}
+
+
+.project:hover .project-title::before,
+.project:hover .project-title::after{
+    color: orangered;
+    
+}
 
 #contact{
     display: flex;
